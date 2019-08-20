@@ -1,0 +1,56 @@
+{
+  "trackedCount": 7,
+  "usersTracked": [
+    {
+      "email": "navya@gmail.com",
+      "zipCode": "66223",
+      "date": "2019-01-27T19:40:23.762Z"
+    },
+    {
+      "email": "byeshvant@gmail.com",
+      "date": "2019-01-27T19:57:04.881Z"
+    },
+    {
+      "email": "byeshvant@gmail.com",
+      "zipCode": "94086",
+      "date": "2019-01-27T19:57:16.596Z"
+    },
+    {
+      "email": "byeshvant@gmail.com",
+      "zipCode": "94086",
+      "date": "2019-01-27T19:57:17.607Z"
+    },
+    {
+      "email": "navya.manda@gmail.com",
+      "date": "2019-01-27T20:20:10.949Z"
+    },
+    {
+      "email": "navya.manda@gmail.com",
+      "zipCode": "66223",
+      "date": "2019-01-27T20:20:18.073Z"
+    },
+    {
+      "email": "navya.manda@gmail.com",
+      "zipCode": "66223",
+      "date": "2019-01-27T20:20:18.272Z"
+    }
+  ],
+  "customers": [
+    {
+      "email": "1byeshvant@gmail.com",
+      "zipCode": "94086",
+      "date": "2019-01-27T19:54:40.894Z"
+    },
+    {
+      "email": "byeshvant@gmail.com",
+      "zipCode": "94086",
+      "date": "2019-01-27T19:57:18.173Z"
+    },
+    {
+      "email": "navya.manda@gmail.com",
+      "zipCode": "66223",
+      "date": "2019-01-27T20:20:20.263Z"
+    }
+  ],
+  "customersCount": 3
+}

@@ -1,0 +1,27 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Its a weather app to know the current temperature.",
+  "main": "index.ejs",
+  "scripts": {
+    "test": "weatherapp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/NavyaManda/Weatherapplication.git"
+  },
+  "author": "NavyaManda",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NavyaManda/Weatherapplication/issues"
+  },
+  "homepage": "https://github.com/NavyaManda/Weatherapplication#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "lowdb": "^1.0.0",
+    "request": "^2.88.0"
+  }
+}

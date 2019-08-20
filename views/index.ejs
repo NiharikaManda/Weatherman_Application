@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/content.js"></script>
+
+  </head>
+  <body>  
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <a class="navbar-brand" href="#">Amply Media</a>
+          </nav>
+      <fieldset>
+          <div class="row">
+              <div class="com-sm-6 col-md-6 col-lg-6">
+                  <form id="signup" action="/signup" method="post" class="form-signin">
+                      <img class="mb-4" src="https://amplymedia.com/wp-content/uploads/2018/03/amply-main-logo.png" alt="" width="72" height="72">
+                      <h1 class="h3 mb-3 font-weight-normal">SignUp for Up to date weather details</h1>
+                      <label for="inputEmail" class="sr-only">Email ID:</label>
+                      <input type="email" id="inputEmail" name="inputEmail" class="form-control" placeholder="Email" required="true" autofocus="">
+                      <br/>
+                      <label for="zipcode" class="sr-only">Zip Code:</label>
+                      <input type="zip code" id="zipCode" pattern="[0-9]{5}" name="zipCode" class="form-control" placeholder="Zip Code" required="true" autofocus="">
+                      <div class="checkbox mb-3">
+                        <label>
+                            <input type="checkbox"  name="accpetTerms" required="true" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">accept terms & conditions. <a href="#" target="_blank ">read the terms here</a></label>
+                        </label>
+                      </div>
+                      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>
+                    </form>
+              </div>
+              <div class="col-sm-6 col-md-6 col-lg-6">
+                  <% if(weather !== null){ %>
+                    <h3>Current Temparature at Your Location</h3>
+                    <img src=<%= weather.iconLink%> name= <%= weather.iconName%> />
+                    <p><%= weather.description%></p>
+                    <label>City, State : </label> <%= weather.city %>, <%= weather.state %>
+                    <br/>
+                    <label>Current Temprature : </label> <%= weather.temperature %>
+                    <br/>
+                    <label>Temprature Range:  </label> <%= weather.lowTemperature %> to <%= weather.highTemperature %>
+                  <% } %>
+                  <% if(error !== null){ %>
+                    <p><%= error %></p>
+                  <% } %>
+              </div>
+            </div>
+      </fieldset>
+    </div>
+  </body>
+</html>
